@@ -1,10 +1,10 @@
 {
     "name": "primevue",
-    "version": "3.32.3-SNAPSHOT",
+    "version": "3.32.3-dmk",
     "homepage": "https://primevue.org/",
     "repository": {
         "type": "git",
-        "url": "https://github.com/primefaces/primevue.git"
+        "url": "https://github.com/dkurucz/primevue.git"
     },
     "license": "MIT",
     "scripts": {
@@ -12,7 +12,6 @@
         "dev": "nuxt dev",
         "generate": "nuxt generate",
         "preview": "nuxt preview",
-        "postinstall": "nuxt prepare",
         "build:lib": "npm run build:check && npm run build:package",
         "build:package": "NODE_ENV=production rollup -c && node build-meta && node api-generator/build-api && gulp build-styles",
         "build:check": "npm run format:check && npm run security:check",
