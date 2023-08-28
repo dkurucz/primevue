@@ -12,7 +12,6 @@
         "dev": "nuxt dev",
         "generate": "nuxt generate",
         "preview": "nuxt preview",
-        "postinstall": "pwd && ls -l",
         "build:lib": "npm run build:check && npm run build:package",
         "build:package": "NODE_ENV=production rollup -c && node build-meta && node api-generator/build-api && gulp build-styles",
         "build:check": "npm run format:check && npm run security:check",
